@@ -13,4 +13,7 @@ for i in data:
         list.append(str)
         str = ""
 
+# print(str)
+list.append(str)
+
 print(list)
