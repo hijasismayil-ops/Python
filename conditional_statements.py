@@ -402,3 +402,117 @@
 #             a[i],a[j] = a[j],a[i]
 
 # print(a)
+
+# set
+
+# {}
+# collection of data
+# unorderd
+# unindex
+# mutable
+# does not allow duplicate values
+# a = {1, 2, 3, 3, 3, 4, 5, 6, 7}
+# b = {1, 2, 3}
+# print(a)
+
+# a = {1, 2, 3, 4, 5, 6}
+# b = {4, 5, 6, 7, 8, 9}
+
+# union
+# print(a.union(b))
+# print(a | b)
+
+# intersection
+# print(a.intersection(b))
+# print(a&b)
+
+# difference
+# print(a-b)
+
+# fruits = {"apple", "orange", "banana", "mango"}
+
+# for i in fruits:
+#     print(i)
+
+# dict
+
+# collection of data
+# key value data pair
+# key:value
+# unindex
+# mutable
+# priority over set
+
+# data = {"name": "mohan", "age": 23, "location": "kochi"}
+
+# print(data["age"])
+
+# data["email"] = "mohan@hmail.com"
+
+# print(data)
+
+# restrictions
+
+# key should be unique
+# key should be immutable type
+
+# operations
+# data = {"name": "hijas", "age": 21, "location": "kochi"}
+
+# .get()
+# print(data["name"])
+# print(data.get("name"))
+
+# .update()
+# data.update({"age": "mohan@123.com"})
+
+# .pop()
+# data.pop("name")
+
+# print(data)
+
+# data = {"name": "hijas", "age": 21, "location": "kochi"}
+
+# print(data.keys())
+# print(data.values())
+
+# for i in data:
+#     print(i, data[i])
+
+# find reverse of a string without using[::-1]?
+
+# str = str(input("Enter a string:"))
+# rev = ""
+
+# for i in range(len(str) - 1, -1, -1):
+#     rev = rev + str[i]
+
+# print(rev)
+
+# print the string without the space?
+
+# data = "My name is mohan, i am 27 years old"
+# op = ""
+
+# for i in data:
+#     if i != " ":
+#         op = op + i
+
+# print(op)
+
+# convert string to a list like this?
+# ['My', 'name', 'is', 'mohan,', 'i', 'am', '27', 'years']
+
+# data = "My name is mohan, i am 27 years old"
+# list = []
+# str = ""
+
+# for i in data:
+#     # print(i, end="")
+#     if i != " ":
+#         str = str + i
+#     else:
+#         list.append(str)
+#         str = ""
+
+# print(list)
