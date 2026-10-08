@@ -221,3 +221,87 @@
 # 1 ** 3 + 5 ** 3 + 3 ** 3 == 153
 
 # leet code 13th question -- home work
+
+# scope
+
+# area in which it is recognised
+
+# name = "hijas"  # globally declared
+
+
+# def myname():
+#     # name = "ijx"
+#     # print(name)
+
+#     def nickname():  # local scope
+#         # name = "santhy"
+#         print(name)
+#     nickname()
+
+
+# myname()
+
+# 1. local
+# 2. enclose
+# 3. global
+# 4. build in
+
+# x = 10
+
+
+# def twotimes():
+#     global x
+#     x = x * 2
+#     print(x)
+
+
+# twotimes()
+# print(x)
+
+# args and kwargs
+
+# def add(*args):  # recives as a tuple
+#     sum = 0
+#     for i in args:
+#         sum += i
+#     print(sum)
+
+
+# add(4, 5, 6, 23, 3, 3, 4, 4, 4)
+
+# def fullname(*args, **kwargs):  # receives as a dic
+#     full = ""
+#     for i in kwargs:
+#         full = full + kwargs[i] + " "
+#     print(full)
+
+
+# fullname(fname="ijx", mname="hijas", lname="jobi", fifthname="satheesh")
+
+# modules
+
+# matrix addition
+
+# a = [[2, 3],
+#      [4, 5]]
+# b = [[2, 1],
+#      [3, 2]]
+
+# c = [[0, 0],
+#      [0, 0]]
+
+# for i in range(len(a)):
+#     for j in range(len(a)):
+#         c[i][j] = a[i][j] + b[i][j]
+# print(c)
+
+# a = [[2, 3],
+#      [4, 5]]
+# b = [[2, 1],
+#      [3, 2]]
+
+# c = [[0, 0],
+#      [0, 0]]
+
+# for i in range(len(a)):
+#     for j in range(len(a)):
