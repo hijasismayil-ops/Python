@@ -62,3 +62,42 @@ import random
 #         print(f'Computer chose {com} You Lose')
 #     else:
 #         print(f'Computer chose {com} You Win')
+
+# file handeling
+# exception handeling
+
+# file1 = open("hello.txt", "r")
+# print(file1.read())
+# file1.close()
+
+# file2 = open("bye.txt", "w")
+# file2.write("i am hijas")
+# file2.close()
+
+# file3 = open("bye.txt", "a")
+# for i in range(1, 100):
+#     file3.write(f"i am hijas {i}\n")
+# file3.close()
+
+# with open("hello.txt", "r") as f:
+#     print(f.read())
+
+import os
+
+# os.mkdir("django")
+# os.rename("bye.txt", "byyeeee.txt")
+# file_path = file's path
+# os.remove(file's path)
+
+# exceptions
+
+# exceptions - events that affects the execution of our programs
+
+# try:
+#     a = int(input("Enter a number:"))
+#     b = int(input("Enter a number:"))
+#     print(a/b)
+# except:
+#     print("an error occured!!")
+
+# print("mohan")

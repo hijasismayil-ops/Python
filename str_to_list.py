@@ -6,7 +6,7 @@ list = []
 str = ""
 
 for i in data:
-    # print(i, end="")
+    print(i, end="")
     if i != " ":
         str = str + i
     else:
