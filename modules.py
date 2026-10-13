@@ -101,3 +101,71 @@ import os
 #     print("an error occured!!")
 
 # print("mohan")
+
+# multiple exception handeling
+
+# try:
+#     a = int(input("Enter a number"))
+#     b = "5"
+#     print(a/b)
+# except ZeroDivisionError:
+#     print("You can't divide a number by zero!!")
+# except ValueError:
+#     print("Check your value")
+# except TypeError:
+#     print("Check your type")
+# finally:
+#     print("This will always executed")
+
+
+# raise
+
+# class Age_error(Exception):
+#     pass
+
+
+# age = 14
+
+# if age < 18:
+#     raise Age_error("age should be greater than 18")
+
+# time
+
+import time
+
+# print(time.time())
+
+# print(time.ctime())  # epoch time
+
+# start = time.time()
+# for i in range(1, 6):
+#     print(i)
+#     time.sleep(1)  # for delaying the excution
+# end = time.time()
+
+# print("total time :", end - start)
+
+
+def execution_time(fun):
+    def wrapper(*args, **kwargs):
+        start = time.time()
+        fun(*args, **kwargs)
+        end = time.time()
+        print("total time :", end - start)
+    return wrapper
+
+
+@execution_time
+def number(n):
+    for i in range(1, n+1):
+        print(i)
+        time.sleep(1)
+
+
+@execution_time
+def add(a, b):
+    a + b
+
+
+add(5, 7)
+number(10)
